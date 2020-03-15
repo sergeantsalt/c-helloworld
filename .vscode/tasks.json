@@ -4,42 +4,20 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Clang compile",
+            "label": "Make",
             "type": "shell",
-            "command": "cc",
-            "args": [
-                "-std=c99",
-                // "-stdlib=libc++",
-                "helloworld.c",
-                "shape.c",
-                "square.c",
-                "-o",
-                "helloworld",
-                "-g",
-                "--debug",
-                "-Wall"
-            ],
+            "command": "make",
+            "args": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
         },
         {
-            "label": "GCC compile",
+            "label": "Clean",
             "type": "shell",
-            "command": "gcc",
-            "args": [
-                "-std=c99",
-                // "-stdlib=libc++",
-                "helloworld.c",
-                "shape.c",
-                "square.c",
-                "-o",
-                "helloworld",
-                "-g",
-                "--debug",
-                "-Wall"
-            ],
+            "command": "make clean",
+            "args": [],
             "group": {
                 "kind": "build",
                 "isDefault": true

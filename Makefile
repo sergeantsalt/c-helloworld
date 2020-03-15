@@ -6,10 +6,10 @@ CC=gcc
 # $(P): $(OBJECTS)
 
 helloworld : main.o shape.o square.o
-	$(CC) -o helloworld main.o shape.o square.o
+	$(CC) -o helloworld.out main.o shape.o square.o
 
 main : main.c shape.c square.c
 	$(CC) -c main.c shape.c square.c
 
 clean :
-	rm helloworld *.o
+	rm helloworld.out *.o
