@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build with Clang",
+            "label": "Clang compile",
             "type": "shell",
             "command": "cc",
             "args": [
@@ -14,8 +14,29 @@
                 "shape.c",
                 "square.c",
                 "-o",
-                "helloworld",
-                // "--debug"
+                "helloworld.0",
+                "-g",
+                "--debug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "GCC compile",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                // "-std=c++17",
+                // "-stdlib=libc++",
+                "helloworld.c",
+                "shape.c",
+                "square.c",
+                "-o",
+                "helloworld.o",
+                "-g",
+                "--debug"
             ],
             "group": {
                 "kind": "build",
