@@ -2,8 +2,6 @@
 
 // shape.h
 
-struct Shapes;
-struct ShapeTypes;
 typedef struct Shapes Shape;
 typedef struct ShapeTypes ShapeType;
 

@@ -1,13 +1,14 @@
 #include "util.h"
 #include "square.h"
-#include "shape.h"
+// #include "shape.h"
 
 int main()
 {
    Square *s = Square__create(5, 10, 20, 20);
-   ShapeType *type = Shape__type(Square__to_shape(s));
-   const char *name = type->name(Square__to_shape(s));
-   int sides = type->sides(Square__to_shape(s));
+   Shape *shape = Square__to_shape(s);
+   ShapeType *type = Shape__type(shape);
+   const char *name = type->name(shape);
+   int sides = type->sides(shape);
    int buffer_size = type->buffer_size;
 
    printf("name=%s, sides=%d, buffer_size=%d", name, sides, buffer_size);

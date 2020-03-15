@@ -1,9 +1,8 @@
 #pragma once
 
-struct Squares;
-struct Shapes;
+#include "shape.h"
+
 typedef struct Squares Square;
-typedef struct Shapes Shape;
 
 Shape *Square__to_shape(Square *square);
 Square *Square__from_shape(Shape *shape);

@@ -8,7 +8,7 @@
             "type": "shell",
             "command": "cc",
             "args": [
-                // "-std=c++17",
+                "-std=c99",
                 // "-stdlib=libc++",
                 "helloworld.c",
                 "shape.c",
@@ -28,7 +28,7 @@
             "type": "shell",
             "command": "gcc",
             "args": [
-                // "-std=c++17",
+                "-std=c99",
                 // "-stdlib=libc++",
                 "helloworld.c",
                 "shape.c",
