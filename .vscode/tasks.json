@@ -16,7 +16,8 @@
                 "-o",
                 "helloworld.o",
                 "-g",
-                "--debug"
+                "--debug",
+                "-Wall"
             ],
             "group": {
                 "kind": "build",
@@ -36,7 +37,8 @@
                 "-o",
                 "helloworld.o",
                 "-g",
-                "--debug"
+                "--debug",
+                "-Wall"
             ],
             "group": {
                 "kind": "build",
