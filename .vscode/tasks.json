@@ -14,7 +14,7 @@
                 "shape.c",
                 "square.c",
                 "-o",
-                "helloworld.0",
+                "helloworld.o",
                 "-g",
                 "--debug"
             ],
